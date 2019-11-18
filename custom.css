@@ -5,22 +5,46 @@
 }
 
 .manhattan {
-  background-image: url(images/bridge.jpg);
+  background-image: url(images/2.jpg);
+  height: 100%;
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
-      padding-top: 15em;
-  padding-bottom: 15em;
-  z-index: -100;
-}
-main{
-  background-image: url(images/bridge.jpg);
+  padding-top: 16em;
+  padding-bottom: 16em;
+
 }
 
 .display-5 ,.lead {
   text-align: center;
   color: white;
 }
+.display-5{
+  font-size: 50px;
+}
+.lead{
+  font-size: 23px;
+  font-weight:250;
 
-.button{
-    text-align: center;
+
+}
+
+.btn-outline-light{
+  /*margin-left: 632px;*/
+
+  display: table;
+  margin: 0 auto;
+
+
+}
+
+/*remove the dot in ul */
+ul {
+  list-style-type: none;
+}
+
+.middle{
+  position: absolute;
+  text-align: center;
 }
