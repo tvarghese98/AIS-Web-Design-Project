@@ -1,0 +1,26 @@
+.navbar-nav{
+
+    margin-left: 680px;
+
+}
+
+.manhattan {
+  background-image: url(images/bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+      padding-top: 15em;
+  padding-bottom: 15em;
+  z-index: -100;
+}
+main{
+  background-image: url(images/bridge.jpg);
+}
+
+.display-5 ,.lead {
+  text-align: center;
+  color: white;
+}
+
+.button{
+    text-align: center;
+}
