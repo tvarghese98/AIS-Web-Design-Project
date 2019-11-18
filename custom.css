@@ -1,6 +1,7 @@
 .navbar-nav{
 
-    margin-left: 680px;
+    position: fixed;
+    right:0;
 
 }
 
