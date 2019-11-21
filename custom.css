@@ -1,22 +1,30 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
 .navbar-nav{
 
     position: fixed;
     right:0;
 
 }
-
-.manhattan {
-  background-image: url(images/2.jpg);
+/*HOME PAGE START*/
+#home{
+  background: url(images/2.jpg) no-repeat center center fixed;
+  display: table;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  position: relative;
+  width: 100%;
   background-size: cover;
-  padding-top: 16em;
-  padding-bottom: 16em;
 
 }
 
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
 .display-5 ,.lead {
   text-align: center;
   color: white;
@@ -24,11 +32,10 @@
 .display-5{
   font-size: 50px;
 }
+
 .lead{
   font-size: 23px;
   font-weight:250;
-
-
 }
 
 .btn-outline-light{
@@ -37,15 +44,38 @@
   display: table;
   margin: 0 auto;
 
-
 }
+/*HOME PAGE*/
+
+
 
 /*remove the dot in ul */
 ul {
   list-style-type: none;
 }
 
-.middle{
-  position: absolute;
+
+.head{
   text-align: center;
 }
+
+#aboutus{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
