@@ -2,12 +2,13 @@ html, body{
   height: 100%;
   width: 100%;
 }
-.navbar-nav{
 
-    position: fixed;
-    right:0;
 
+.navbar .navbar-collapse {
+  text-align: center;
 }
+
+
 /*HOME PAGE START*/
 #home{
   background: url(images/2.jpg) no-repeat center center fixed;
@@ -59,9 +60,11 @@ ul {
   text-align: center;
 }
 
-#aboutus{
-  padding-top: 50px;
-  padding-bottom: 50px;
+.padding {
+  padding: 80px 0;
+}
+.padding img{
+  width: 100%
 }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
