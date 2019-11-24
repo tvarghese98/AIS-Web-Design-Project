@@ -46,7 +46,7 @@ html, body{
   margin: 0 auto;
 
 }
-/*HOME PAGE*/
+/*HOME PAGE END*/
 
 
 
@@ -63,8 +63,55 @@ ul {
 .padding {
   padding: 80px 0;
 }
-.padding img{
+.img-fluid{
   width: 100%
+}
+/*Card*/
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+       /* Added */
+}
+
+
+
+/*Form*/
+label{
+  float:left;
+  width: 8em;
+  padding-right: 1em;
+}
+input{
+  display: block;
+  margin-bottom: 1em;
+}
+.mySubmit{
+  margin-left: 10em;
+}
+
+/*Social Media*/
+.social a{
+  font-size:35px;
+  padding: .5em;
+
+}
+.fa-facebook-square{
+  color: #3b5998;
+}
+.fa-instagram{
+  color: #8134AF;
+}
+.fa-slack{
+  color: white;
+}
+.fa-linkedin{
+  color: #0e76a8;
+}
+
+.footer{
+  background-color: #202020;
+  color: white;
+  padding-top: 3em;
 }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
