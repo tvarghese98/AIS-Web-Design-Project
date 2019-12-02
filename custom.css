@@ -1,128 +1,137 @@
-html, body{
-  height: 100%;
-  width: 100%;
-  scroll-behavior: smooth;
+html,
+body {
+	height: 100%;
+	width: 100%;
+	scroll-behavior: smooth;
 }
-
 
 .navbar .navbar-collapse {
-  text-align: center;
+	text-align: center;
 }
-
 
 /*HOME PAGE START*/
-#home{
-  background: url(images/2.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-
+#home {
+	background: url(images/2.jpg) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	font-family: MicrosoftYaHeiimport;
 }
 
-.landing-text{
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  color: white;
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
 }
-.display-5 ,.lead {
-  text-align: center;
-  color: white;
+.display-5,
+.lead {
+	text-align: center;
+	color: white;
 }
-.display-5{
-  font-size: 50px;
-}
-
-.lead{
-  font-size: 23px;
-  font-weight:250;
+.display-5 {
+	font-size: 50px;
 }
 
-.btn-outline-light{
-  /*margin-left: 632px;*/
+.lead {
+	font-size: 23px;
+	font-weight: 250;
+}
 
-  display: table;
-  margin: 0 auto;
+.btn-outline-light {
+	/*margin-left: 632px;*/
 
+	display: table;
+	margin: 0 auto;
 }
 /*HOME PAGE END*/
 
-
-
 /*remove the dot in ul */
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 
-
-.head{
-  text-align: center;
+.head {
+	text-align: center;
 }
 
 .padding {
-  padding: 80px 0;
+	padding: 80px 0;
 }
-.img-fluid{
-  width: 100%
+.img-fluid {
+	width: 100%;
 }
 /*Card*/
 .card {
-        margin: 0 auto; /* Added */
-        float: none; /* Added */
-       /* Added */
+	margin: 0 auto; /* Added */
+	float: none; /* Added */
+	/* Added */
 }
-
-
 
 /*Form*/
-label{
-  float:left;
-  width: 8em;
-  padding-right: 1em;
+label {
+	float: left;
+	width: 8em;
+	padding-right: 1em;
 }
-input{
-  display: block;
-  margin-bottom: 1em;
+input {
+	display: block;
+	margin-bottom: 1em;
 }
-.mySubmit{
-  margin-left: 10em;
+.mySubmit {
+	margin-left: 10em;
 }
 
 /*Social Media*/
-.social a{
-  font-size:35px;
-  padding: .5em;
-
+.social a {
+	font-size: 35px;
+	padding: 0.5em;
 }
-.fa-facebook-square{
-  color: #3b5998;
+.fa-facebook-square {
+	color: #3b5998;
 }
-.fa-instagram{
-  color: #8134AF;
+.fa-instagram {
+	color: #8134af;
 }
-.fa-slack{
-  color: white;
+.fa-slack {
+	color: white;
 }
-.fa-linkedin{
-  color: #0e76a8;
-}
-
-.footer{
-  background-color: #202020;
-  color: white;
-  padding-top: 3em;
+.fa-linkedin {
+	color: #0e76a8;
 }
 
-
-#team{
-  text-align: center;
+.footer {
+	background-color: #202020;
+	color: white;
+	padding-top: 3em;
 }
 
-#community{
-  padding-bottom: 100px;
+#team {
+	text-align: center;
+	font-family: MicrosoftYaHeiimport;
 }
+
+#community {
+	padding-bottom: 100px;
+	font-family: MicrosoftYaHeiimport;
+}
+#about {
+	font-family: MicrosoftYaHeiimport;
+}
+
+#events {
+	font-family: MicrosoftYaHeiimport;
+}
+#workshops {
+	font-family: MicrosoftYaHeiimport;
+}
+@font-face {
+	font-family: MicrosoftYaHeiimport;
+	src: url("MicrosoftYaHei.ttf");
+}
+
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
