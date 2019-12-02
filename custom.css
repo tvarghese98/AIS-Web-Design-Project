@@ -177,6 +177,20 @@ ul {
 
 
 /*IMAGE CENTER*/
+#team,#events,#events,#about,#workshops {
+	text-align: center;
+	font-family: MicrosoftYaHeiimport. sans-serif;
+}
+
+#community {
+	padding-bottom: 100px;
+	font-family: MicrosoftYaHeiimport, sans-serif;
+}
+
+@font-face {
+	font-family: MicrosoftYaHeiimport,sans-serif;
+	src: url("MicrosoftYaHei.ttf");
+}
 
 
 /*
