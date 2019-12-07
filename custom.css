@@ -5,8 +5,18 @@ body {
 	scroll-behavior: smooth;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 .navbar .navbar-collapse {
 	text-align: center;
+}
+.navbar{
+	border-bottom: 1px solid 	#989898;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+
 }
 
 /*HOME PAGE START*/
@@ -17,7 +27,6 @@ body {
 	position: relative;
 	width: 100%;
 	background-size: cover;
-	font-family: MicrosoftYaHeiimport;
 }
 
 .landing-text {
@@ -64,87 +73,190 @@ ul {
 	width: 100%;
 }
 /*Card*/
-.card {
-	margin: 0 auto; /* Added */
-	float: none; /* Added */
-	/* Added */
+.cards {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+	font-size: 20px;
+	white-space: nowrap;
+}
+.card-text {
+	font-size: 15px;
+	white-space: nowrap;
+}
+.director {
+	margin-left: 20px;
 }
 
 /*Form*/
-label {
-	float: left;
-	width: 8em;
-	padding-right: 1em;
-}
-input {
-	display: block;
-	margin-bottom: 1em;
-}
-.mySubmit {
-	margin-left: 10em;
-}
 
 /*Social Media*/
-.social a {
-	font-size: 35px;
-	padding: 0.5em;
-}
-.fa-facebook-square {
+
+.fa-facebook-square:hover {
 	color: #3b5998;
 }
-.fa-instagram {
-	color: #8134af;
+.fa-instagram:hover {
+	color: #f77737;
 }
-.fa-slack {
-	color: white;
+.fa-slack:hover {
+	color: #4a154b;
 }
-.fa-linkedin {
+.fa-linkedin:hover {
 	color: #0e76a8;
 }
 
+.fab {
+	padding: 15px;
+	font-size: 30px;
+	color: white;
+}
+
 .footer {
-	background-color: #202020;
+	background-color: #0c252e;
 	color: white;
 	padding-top: 3em;
+	padding-bottom: 10px;
 }
-
-#team {
+footer{
+	background-color: #00080a;
+	color: white;
 	text-align: center;
-	font-family: MicrosoftYaHeiimport;
+	padding-top: 15px;
+	padding-bottom: 15px;}
+
+#team, #events {
+	text-align: center;
 }
 
-#community {
-	padding-bottom: 100px;
-	font-family: MicrosoftYaHeiimport;
-}
-#about {
-	font-family: MicrosoftYaHeiimport;
+
+#form {
+	align-items: center;
 }
 
-#events {
-	font-family: MicrosoftYaHeiimport;
+.newsletter {
+	margin: 0;
+	padding: 0;
 }
-#workshops {
-	font-family: MicrosoftYaHeiimport;
+.email-box {
+	height: 38px;
+	display: flex;
+	justify-content: center;
 }
+
+.email-box i {
+	background: #2f3542;
+	width: 40px;
+	line-height: 40px;
+}
+.tbox,
+.button1 {
+	border: none;
+	outline: none;
+}
+.tbox {
+	width: 0px;
+	transition: 0.6s;
+}
+.email-box:hover > .tbox,
+.tbox:focus {
+	width: 220px;
+	padding: 0 10px;
+	height: 38px;
+}
+
+#contact {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button1 {
+	background: #2f3542;
+	color: white;
+	padding: 0 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.leftAlign {
+	text-align: left;
+	font-family: MicrosoftYaHeiimport, sans-serif;
+}
+/*remove blue color*/
+
+.linkdecor a {
+  color:inherit;
+  text-decoration: none;
+ }
+
+ .linkdecor a:hover{
+    text-decoration: none;
+}
+
+/*IMAGE CENTER*/
+#team,#events,#events,#about,#workshops,#community
+ {
+	text-align: center;
+	font-family: MicrosoftYaHeiimport, sans-serif;
+	padding: 70px 0;
+}
+#competitions,#committee{
+	font-family: MicrosoftYaHeiimport, sans-serif;
+	padding: 70px 0;
+}
+
 @font-face {
-	font-family: MicrosoftYaHeiimport;
+	font-family: MicrosoftYaHeiimport, sans-serif;
 	src: url("MicrosoftYaHei.ttf");
 }
+#midAlign {
+	text-align: center;
+	font-family: MicrosoftYaHeiimport, sans-serif;
+}
+
+/* form */
+
+input#firstName:focus:invalid,
+input#lastName:focus:invalid,
+input#email:focus:invalid,
+input#address:focus:invalid,
+input#PhoneNumber:focus:invalid {
+	background: #fff8c4;
+}
+
+input#firstName:focus:valid,
+input#lastName:focus:valid,
+input#email:focus:valid,
+input#address:focus:valid,
+input#PhoneNumber:focus:valid {
+	background: #fff8c4;
+}
+
+/* Contact */
+
+textarea{
+	width: 100%;
+}
+
+
+/*form */
+#team, #workshops, #community, #contact{
+	background-color:#F5F5F5;
+}
+#team .cards{
+	background-color: white;
+}
+/*background */
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
-
 Small (sm) devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
-
 Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
-
 Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
-
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */

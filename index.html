@@ -33,7 +33,7 @@
               <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT US</a>
+              <a class="nav-link" id="demo" href="#about" onclick="myFunction()">ABOUT US</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#team">TEAM</a>
@@ -57,31 +57,29 @@
               <a class="nav-link" href="#contact">CONTACT US</a>
             </li>
 
-
-            
-
-
-
-
-
-
           </ul>
         </div>
       </nav>
-    <!-- Navbar End-->
+<!-- Navbar End-->
 
+<script>
+$( '#navbarNavDropdown .navbar-nav a' ).on( 'click', function () {
+$( '#navbarNavDropdown .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+$( this ).parent( 'li' ).addClass( 'active' );
+});
+  </script>
 
     <!-- Navbar End-->
 <!--Sign Up
 
 
-  <!--START HOME PAGE-->
+  <!-START HOME PAGE-->
 <div id="home">
   <div class="landing-text">
     <!--<img src="images/white_logo.png" alt="white logo" style="width:145px;height:150px;">-->
     <h1 class="display-5">BARUCH AIS</h1>
     <p class="lead">THE ASSOCIATION FOR INFORMATION SYSTEMS <br> STUDENT CHAPTER AT BARUCH COLLEGE</p>
-    <button type="button" class="btn btn-outline-light">JOIN US</button>
+    <a href='https://docs.google.com/forms/d/1BZYA75QVWle92Ww5tw60IIdVckO1RSK4KeN2REjH6mg/' target="_blank"><button type="button" class="btn btn-outline-light">JOIN US</button></a>
 
 </div>
 </div>
@@ -90,7 +88,6 @@
 
   <!--START ABOUT US-->
 <div id="about">
-<div class = "padding">
   <div class="container">
     <div class="row">
       <div class="col-md-6 text-center">
@@ -113,29 +110,20 @@
 </div>
 </div>
 </div>
-</div>
   <!--END ABOUT US-->
-</div>
-<hr class="my-4">
-</div>
+
 
 
   <!-- START TEAM-->
   <div id="team">
-  <div class="container-fluid">
-    <div class="row welcome text-center">
-      <div class="col-12">
-        <h1>TEAM</h1>
-      </div>
-      <hr>
 
+    <div class="container" style="padding-bottom:20px!important">
+          <h1>TEAM</h1>
     </div>
-  </div>
-
 
 
   <div class="container">
-  <div class="row padding">
+  <div class="row" style="padding-bottom:50px!important">
     <div class="col-md-3">
       <div class="cards" style="width: 13rem">
         <img src="headshot/yulia.jpeg" alt="Card image cap" style="width:100%">
@@ -241,7 +229,7 @@
   </div>
 
 </div>
-  <hr class="my-4">
+
 
   <!--END TEAM-->
 
@@ -254,8 +242,10 @@
 
 
 <div id="events">
-  <div class="container">
-  <h1>EVENTS</h1>
+  <div class="container" style="padding-bottom:50px!important">
+        <h1>EVENTS</h1>
+	</div>
+    <div class="container">
       <div class="row text-center">
           <!-- Column 1-->
           <div class="col-md-6">
@@ -282,16 +272,13 @@
 </div>
 <!--END EVENTS-->
 
-</div>
-<hr class="my-4">
-</div>
+
 <!----Line-->
 
 
   <!-- START WORKSHOPS-->
 
   <div id="workshops">
-    <div class ="padding">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -305,264 +292,231 @@
                     We love to learn new things and hope you do to!.</p>
             <br>
             <a href="https://aisnet.org/page/careerdevelopment" class="btn btn-dark" target="_blank">LEARN MORE</a>
-  
-  
+
+
           </div>
         </div>
     </div>
   </div>
-  </div>
-          
-          
-  
+
+
+
     <!--END WORKSHOPS-->
 
-  
+
   <!--Start Competetions-->
-			  
-			   <div> 
-<hr class="my-4">
-</div>
+
+
 <!-- Start competitions -->
 <div id = "competitions">
 	<div class="container text-center">
-	<h1>COMPETITIONS</h1>	
-	
+	<h1>COMPETITIONS</h1>
+
 	</div>
 	<div class = "container">
 		<br>
-		
 <ul>
 	<div class ="linkdecor"><a href="http://sc.aisnet.org/student-leadership-conference/student-chapter-comp/the-computational-society-case-study-challenge/" target="_blank" ><li><h2>THE COMPUTATIONAL SOCIETY CASE STUDY CHALLENGE</h2></li></a></div><br>
 	<div class = "leftAlign">
 	<p>Do you find the exploration of technological impacts, such as the use of Internet of Things (IoT) to improve organizational efficiency or affect quality of life, intriguing? Curious about how modern information technologies transform the way individuals and organizations make choices? New this year is our case study competition where you can choose one from three cases study scenarios below, to explore and compete for the cash prize.</p>
-	</div>			  
+	</div>
 	<div class ="linkdecor"><a href="http://sc.aisnet.org/student-leadership-conference/student-chapter-comp/analytics-challenge/" target="_blank" ><li><h2>ANALYTICS CHALLENGE</h2><br></li></a>	</div>
 	<div class = "leftAlign">
-	<p> 
+	<p>
 	Again this year, the Analytics Challenge is brought to you by the Institute for Business and Information Technology (IBIT) at Temple University. If data analysis/business analytics is your forte, choose from one of the three cases and get your data game on to compete for awards in two overall categories – graphic and analysis. Details on deliverables, deadlines and how to enter your submission in the competition are provided in each use case. Teams or individual entries are welcome.
 	</p>
 	</div>
-	
+
 	<div class ="linkdecor"><a href="http://sc.aisnet.org/student-leadership-conference/student-chapter-comp/the-university-of-arkansas-ais-blockchain-hackathon-challenge/" target="_blank" ><li><h2>SOFTWARE INNOVATION CHALLENGE</h2></li>	</a></div><br>
 	<div class = "leftAlign">
 	<p>
 	The Software Innovation Challenge focuses on information systems solutions, innovations and initiatives that help make the world a better, safer place for organizations and society in general.
 	</p>
 	</div>
-	</ul>			  
+	</ul>
 		</div>
 		</div>
-		
-				 
-		  
-<div> 
-<hr class="my-4">
-</div><br><br>
+
+
+
+
 <!----Line-->
 
-<!-- END competitions -->		
+<!-- END competitions -->
   <!-- START COMMUNITY-->
   <div id="community">
     <section class="gallery-block compact-gallery">
         <div class="container">
             <div class="heading">
-                <h2>COMMUNITY</h2>
+                <h1>COMMUNITY</h1>
             </div>
             <div class="row no-gutters">
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image11.jpeg">
                         <img class="img-fluid image" src="img/image11.jpeg">
-  
+
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image8.jpeg">
                         <img class="img-fluid image" src="img/image8.jpeg">
-  
-  
+
+
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image2.jpeg">
                         <img class="img-fluid image" src="img/image2.jpeg">
                         <span class="description">
-  
+
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image4.jpeg">
                         <img class="img-fluid image" src="img/image4.jpeg">
                         <span class="description">
-  
+
                         </a>
                     </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image5.jpeg">
                         <img class="img-fluid image" src="img/image5.jpeg">
                         <span class="description">
-  
+
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image1.jpeg">
                         <img class="img-fluid image" src="img/image1.jpeg">
                         <span class="description">
-  
+
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image6.jpeg">
                         <img class="img-fluid image" src="img/image6.jpeg">
                         <span class="description">
-  
+
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image3.jpeg">
                         <img class="img-fluid image" src="img/image3.jpeg">
                         <span class="description">
-  
+
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="img/image10.jpeg">
                         <img class="img-fluid image" src="img/image10.jpeg">
                         <span class="description">
-  
+
                     </a>
                 </div>
             </div>
         </div>
     </section>
   </div>
-  
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
     </script>
-      
+
     <!--END COMMUNITY-->
-  <div>
-  <hr class="my-4">
-  </div>
-  
+
 <!-- Start Committee-->
-<div> 
-  <hr class="my-4">
-  </div>
+
   <!-- Start competitions -->
   <div id = "committee">
     <div class="container text-center">
-    <h1>COMMITTEE</h1>	
-    
+    <h1>COMMITTEE</h1>
+
     </div>
     <div class = "container">
       <br>
-      
+
   <ul>
    <h2>CORPORATE RELATIONS</h2><br>
     <div class = "leftAlign">
-    <p> Members of this committee is responsible for maintaining and improving our organization’s positive image. The committee needs to reach out to other baruch clubs, external companies, guest speakers, and organizations for collaboration and partnership opportunities. 
+    <p> Members of this committee is responsible for maintaining and improving our organization’s positive image. The committee needs to reach out to other baruch clubs, external companies, guest speakers, and organizations for collaboration and partnership opportunities.
       We strive to have many opportunities for students to network others during our club events.
     </p>
-    </div>			  
+    </div>
     <h2>MARKETING</h2><br>
     <div class = "leftAlign">
-    <p> 
+    <p>
       These indivudals are charge of creation and sometimes distribution of flyers for each of our club's events. They are also the ones who create marketing campaigns that would support our social media and increase our presence on campus.
     </p>
     </div>
-    
+
    <h2>CREATIVE DESIGN</h2><br>
     <div class = "leftAlign">
     <p>
-     Members of design team will work closely with marketing on developing strategic marketing ideas for social media as well as on-campus campaigns. Director of Creative Design will take over the responsibility for our club’s newsletter and maintains/ updates the email list as needed. 
+     Members of design team will work closely with marketing on developing strategic marketing ideas for social media as well as on-campus campaigns. Director of Creative Design will take over the responsibility for our club’s newsletter and maintains/ updates the email list as needed.
     </p>
 
     <h2>EVENT PLANNING</h2><br>
     <div class = "leftAlign">
     <p>
-      Finally,the event planning committee will in charge of distributing flyers for each of our club's events, they are also in charge of choosing and delivering the catering for each workshop/event. 
+      Finally,the event planning committee will in charge of distributing flyers for each of our club's events, they are also in charge of choosing and delivering the catering for each workshop/event.
       This committee works hand in hand with Marketing and the Creative Design Committees so that our Baruch AIS can grow each year.
     </p>
     </div>
-    </ul>			  
+    </ul>
       </div>
       </div>
-      
+      <!-- End Committee -->
 
-      <div>
-        <hr class="my-4">
-        </div>
+
 
 
 
 <!-- End Committee -->
-				  		  
+
 <!-- Start Contact us-->
- <div class="container">
 <div id = "contact">
-<div id= "midAlign">
-	<h1>Contact Us</h1>	<br>
-	</div>
-	
-<form class="needs-validation" action="thanks.html" method="get">
+  <div class="container">
+    <div id= "midAlign">
+	   <h1>CONTACT US</h1><br>
+	   </div>
+      <form class="needs-validation" action="thanks.html" method="get">
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" pattern="[a-zA-Z]+" required>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name*" value="" pattern="[a-zA-Z]+" required>
               </div>
-              
+
               <div class="col-md-6 mb-3">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" pattern="[a-zA-Z]+" required>	  
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name*" value="" pattern="[a-zA-Z]+" required>
               </div>
             </div>
-            
-	
-         
 
-            <div class="mb-3">
-              <label for="email">Email </label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com" Required>
+            <div class="row">
+            <div class="col-md-6 mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email*" Required>
             </div>
-
-            
-          
-				
-				
-				 <div class="mb-3">
-				<label for="PhoneNumber">PhoneNumber</label>
-              <input type="tel" class="form-control" id="PhoneNumber" placeholder="111-222-3333" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+            <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" id="subject" placeholder="Subject*" value="" pattern="[a-zA-Z]+" required>
             </div>
-         
-				
+            </div>
 				<div class="mb-3">
-				<textarea rows="10" cols = "125" >
+				<textarea rows="10">
 					</textarea>
-				
-		
-              
-            
-              
-              
-             <hr class="mb-4">
+           <hr class="mb-4">
             <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
-	</div>
-					</form>				  
-
-</div>
+	         </div>
+				</form>
     </div>
+</div>
 
 
 <!--Section: Contact v.2-->
-				  
-				  
-				  
-				  
+
+
+
+
 <!-- end contact us -->
-				  
+
 
 <!--FOOTER-->
 
@@ -602,11 +556,13 @@
 </div>
 </div>
 </div>
+<footer>&copy; Copyright BaruchAIS
+</footer>
   <!--END CONTACT-->
-			  
-		  
-				  
-				  
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
