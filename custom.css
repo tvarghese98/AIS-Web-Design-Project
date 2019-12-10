@@ -165,11 +165,7 @@ footer{
 	height: 38px;
 }
 
-#contact {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 
 .button1 {
 	background: #2f3542;
@@ -194,15 +190,18 @@ footer{
 }
 
 /*IMAGE CENTER*/
-#team,#events,#events,#about,#workshops,#community
- {
+#team,#events,#events,#about,#workshops,#community{
 	text-align: center;
 	font-family: MicrosoftYaHeiimport, sans-serif;
-	padding: 70px 0;
+	padding: 60px 0;
+}
+#contact{
+	padding: 40px 0;
+
 }
 #competitions,#committee{
 	font-family: MicrosoftYaHeiimport, sans-serif;
-	padding: 70px 0;
+	padding: 60px 0;
 }
 
 @font-face {
@@ -243,10 +242,12 @@ textarea{
 #team, #workshops, #community, #contact{
 	background-color:#F5F5F5;
 }
+
 #team .cards{
 	background-color: white;
 }
 /*background */
+
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)

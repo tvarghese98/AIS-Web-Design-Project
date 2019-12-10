@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class = "navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="demo" href="#about" onclick="myFunction()">ABOUT US</a>
@@ -122,9 +122,11 @@ $( this ).parent( 'li' ).addClass( 'active' );
     </div>
 
 
-  <div class="container">
-  <div class="row" style="padding-bottom:50px!important">
-    <div class="col-md-3">
+
+
+  <div class="container-fluid">
+  <div class="row director text-center">
+    <div class="col">
       <div class="cards" style="width: 13rem">
         <img src="headshot/yulia.jpeg" alt="Card image cap" style="width:100%">
         <div class="card-body">
@@ -134,28 +136,27 @@ $( this ).parent( 'li' ).addClass( 'active' );
         </div>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col">
       <div class="cards" style="width: 13rem">
         <img src="headshot/Rey.jpeg" alt="Card image cap" style="width:100%">
         <div class="card-body">
             <h4 class="card-title">Reyhan Merekar</h4>
-            <p class="card-text">Vice President</p>
+            <p class="card-text">Vice Presient</p>
 
         </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="cards" style="width: 13rem;">
+    <div class="col">
+      <div class="cards" style="width: 13rem">
         <img src="headshot/Chris.jpeg" alt="Card image cap" style="width:100%">
         <div class="card-body">
             <h4 class="card-title">Chris Estriplet</h4>
-
             <p class="card-text">Secretary</p>
 
         </div>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col">
       <div class="cards" style="width: 13rem;">
         <img src="headshot/Nadia.jpeg" alt="Card image cap" style="width:100%">
         <div class="card-body">
@@ -165,12 +166,23 @@ $( this ).parent( 'li' ).addClass( 'active' );
         </div>
       </div>
     </div>
+    <div class="col">
+      <div class="cards" style="width: 13rem;">
+        <img src="headshot/Artem.jpeg" alt="Card image cap" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">Artem Zinkin</h4>
+            <p class="card-text">Alumni Relations</p>
 
+        </div>
+      </div>
+    </div>
 
   </div>
   </div>
-
-
+<div>
+  <br>
+  <br>
+</div>
 
   <div class="container-fluid">
   <div class="row director text-center">
@@ -235,10 +247,7 @@ $( this ).parent( 'li' ).addClass( 'active' );
 
 
 
-
-
-  <!--END EVENTS-->
-  <!-- START EVENTS-->
+=  <!-- START EVENTS-->
 
 
 <div id="events">
@@ -262,7 +271,7 @@ $( this ).parent( 'li' ).addClass( 'active' );
         <!-- Google Calender -->
          <div id= calender>
             <div class="container text-center padding-bottom"style="">
-            <iframe src="https://calendar.google.com/calendar/embed?src=baruch.ais%40gmail.com&ctz=America%2FNew_York" style="border-width:0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=baruch.ais%40gmail.com&ctz=America%2FNew_York" style=width: 500px; height: 700px; "frameborder="0" scrolling="no"></iframe>
           </div>
         </div>
         </div>
@@ -273,7 +282,7 @@ $( this ).parent( 'li' ).addClass( 'active' );
 <!--END EVENTS-->
 
 
-<!----Line-->
+
 
 
   <!-- START WORKSHOPS-->
@@ -480,7 +489,11 @@ $( this ).parent( 'li' ).addClass( 'active' );
     <div id= "midAlign">
 	   <h1>CONTACT US</h1><br>
 	   </div>
+  </div>
+     <div class="container">
+
       <form class="needs-validation" action="thanks.html" method="get">
+
             <div class="row">
               <div class="col-md-6 mb-3">
                 <input type="text" class="form-control" id="firstName" placeholder="First Name*" value="" pattern="[a-zA-Z]+" required>
@@ -499,13 +512,16 @@ $( this ).parent( 'li' ).addClass( 'active' );
             <input type="text" class="form-control" id="subject" placeholder="Subject*" value="" pattern="[a-zA-Z]+" required>
             </div>
             </div>
+
 				<div class="mb-3">
 				<textarea rows="10">
 					</textarea>
            <hr class="mb-4">
             <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
 	         </div>
+
 				</form>
+
     </div>
 </div>
 
