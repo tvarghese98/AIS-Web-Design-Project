@@ -3,6 +3,7 @@ body {
 	height: 100%;
 	width: 100%;
 	scroll-behavior: smooth;
+	
 }
 
 * {
@@ -75,6 +76,11 @@ ul {
 /*Card*/
 .cards {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+	float: none;
+	margin-bottom: 10px;
+	
+	
 }
 
 .card-title {
@@ -247,13 +253,21 @@ textarea{
 	background-color: white;
 }
 /*background */
-
-
+.googlecal iframe{
+	width: 800px;
+	height:600px;
+	frameborder:0;
+	scrolling:none;
+}
+h2{
+	text-align: left;
+}
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
 Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {
+}
 Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
 Large (lg) devices (desktops, 992px and up)
